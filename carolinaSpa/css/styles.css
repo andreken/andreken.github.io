@@ -1,0 +1,351 @@
+body {
+	background-color: #fafafa;
+}
+h2 {
+	font-size: 2.4rem;
+}
+
+h2 span {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h3 span {
+	font-size: 3rem;
+}
+
+h2 span, h3 span {
+	font-family: 'Italianno', sans-serif;
+	color: #e082a8;
+	display: block;
+}
+
+h2, h3 {
+	font-family: 'Lato', sans-serif;
+	color: black;
+	line-height: 2.4rem;
+}
+
+/* Social menu */
+.socials ul {
+	list-style: none;
+}
+
+.socials ul li {
+	position: relative;
+	display: inline-block;
+	font-size: 2rem;
+	padding: 0 0.4rem;
+}
+
+.socials ul li a{
+	color: #e082a8;
+}
+
+.socials ul li a:hover{
+	color: #e082a8;
+}
+
+
+/* bg-color for the navigation */
+.navigation{
+	background-color: #8ed3cc;
+}
+
+/* bg-image top and bottom for the navigation bar */
+nav.main-nav{
+	background-image: url("../img/border_horizontal.png"),
+					  url("../img/border_horizontal.png");
+	background-repeat: repeat-x;
+	background-position: top, bottom;
+}
+
+/* create nav-fill manually */
+#navbar-main ul {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+nav.main-nav .nav-link {
+	font-size: 1.2rem;
+	color: #fff !important;
+	font-family: 'Raleway', sans-serif;
+}
+
+nav.main-nav .nav-item:hover {
+	background-color: #39a69b;
+	border-radius: 10px;
+}
+/* Transition of the bg-color when passing over another item */
+nav.main-nav .nav-item {
+	transition: background-color .3s ease;
+}
+
+/* ------------------------------ */
+/* INDEX.PHP */
+/* ------------------------------ */
+.carousel .carousel-caption h3{
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.2rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+.new-website p {
+	font-size: 1.6rem;
+	font-family: 'Lato', sans-serif;
+	color: #979797;
+}
+
+.image-links img {
+	border: 6px solid white;
+	-webkit-transition: transform .3s ease;
+	-ms-transition: transform .3s ease;
+	transition: transform .3s ease;
+}
+
+/*CSS3 animation */
+.image-links img:hover {
+	-webkit-transform: scale(1.2) rotate(10deg);
+	-ms-transform: scale(1.2) rotate(10deg);
+	transform: scale(1.2) rotate(10deg);
+}
+
+.image-info {
+	background-color: white;
+	margin-top: -60px;
+}
+
+.image-info .btn-success{
+	background-color: #e082a8;
+	border: none;
+	border-radius: 0px;
+}
+
+.image-info .btn-success:hover{
+	background-color: #ca5b88;
+}
+
+/* business hours*/
+.business-hours {
+	background-color: #8ed3cc;
+	color: #fff;
+}
+
+.business-hours h2{
+	color: #fff;
+}
+
+.bg-hours {
+	background-image: url(../img/bg_hours.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 300px;
+}
+
+.table {
+	border: solid 2px #e082a8;
+}
+
+.table td,
+.table thead th {
+	border: none;
+}
+
+.table tbody tr td {
+	padding: .35rem;
+}
+
+.table thead {
+	background-color: #e082a8;
+}
+
+/* products */
+.products .card {
+	border: none;
+}
+
+.products .card a{
+	color: #000;
+}
+
+.products .card a:hover{
+	text-decoration: none;
+}
+
+.products .card h3{
+	color: #e082a8;
+	font-size: 1.3rem;
+}
+
+.products .card p{
+	font-size: .8rem;
+}
+
+.products .card p.price{
+	font-size: 1.5rem;
+	font-family: 'Lato', sans-serif;
+	color: #979797;
+}
+
+/* appointment */
+.appointment {
+	background-image: url(../img/bg_appointment.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	/* The background image will not scroll with the page */
+	background-attachment: fixed;
+	color: #fff;
+}
+
+/* Apply css only for big screen devices */
+@media(min-width: 992px){
+	.appointment {
+		/* Resize the background image to cover the entire container, 
+		even if it has to stretch the image or cut a little bit off one of the edges */
+		background-size: cover;
+	}
+}
+
+.appointment h3 {
+	font-size: 3.5rem;
+	color: #fff;
+	line-height: 4rem;
+}
+
+.appointment p {
+	line-height: 2.6rem;
+}
+
+.appointment .btn-primary {
+	background-color: #8ed3cc;
+	border: none;
+	border-radius: 0px;
+	padding: 1rem 5rem;
+	font-family: 'Lato', sans-serif;
+}
+
+.appointment .btn-primary:hover {
+	background-color: #68bebc;
+}
+
+/* footer */
+.site-footer .copyright{
+	font-family: 'Lato', sans-serif;
+	color: #979797;
+}
+
+
+/* ------------------------------ */
+/* ABOUT.PHP */
+/* ------------------------------ */
+
+.hero {
+	position: relative;
+}
+
+.hero h2 {
+	/* An element with position: absolute; is positioned relative to the nearest positioned ancestor */
+	position: absolute;
+	background-color: #8ed3cc;
+	bottom: 3rem;
+	right: 0rem;
+	padding: 1rem 2rem 1rem 6rem;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 900;
+	font-size: 3rem;
+	color: #fff;
+}
+
+.main-content {
+	line-height: 2rem;
+}
+
+.hours {
+	background-color: #8ed3cc;
+	color: #fff;
+}
+
+.hours h2 {
+	color: #fff;
+	font-size: 2rem;
+}
+
+.hours p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.1rem;
+}
+
+.gallery a {
+	text-decoration: none;
+}
+
+
+/* ------------------------------ */
+/* SERVICES.PHP */
+/* ------------------------------ */
+
+#services .card-header {
+	background-color: #e082a8;
+	color: #fff;
+}
+
+#services .card-header a{
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-size: 1.8rem;
+}
+
+#services .card-header a:hover{
+	text-decoration: none;
+}
+
+.discount {
+	background-color: #8ed3cc;
+	color: #fff;
+	background-clip: content-box;
+	-moz-background-clip: content-box;
+	-webkit-background-clip: content-box;
+}
+
+.discount h3 {
+	color: #fff;
+}
+
+.coupon {
+	border: 2px dashed white;
+}
+
+.coupon p, .price {
+	font-family: 'Lato', sans-serif;
+	font-size: 2rem;
+	line-height: 1rem;
+}
+
+.coupon span {
+	font-weight: 400;
+}
+
+
+/* ------------------------------ */
+/* CONTACT.PHP */
+/* ------------------------------ */
+.contact-form {
+	border: 2px solid #9a9a9a;
+	background-color: white;
+}
+
+.contact-form .btn-primary{
+	background-color: #8ed3cc;
+	border-radius: 0;
+	border: none;
+	padding: 1rem 6rem; 
+}
+
+.contact-form .btn-primary:hover{
+	cursor: pointer;
+	background-color: #6bbdb5;
+}
