@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Andrea Bonizzoni | Front-end developer</title>
+</head>
+<body>
+
+  <!-- SECTION - Home -->
+  <section id="home">
+    <nav id="nav" class="nav navbar navbar-expand-lg navbar-light bg-light">
+      <ul id="nav-menu" class="nav-menu">
+        <li class="nav-menu__item nav-menu__item--home nav-menu__item--active">
+          <a class="nav-menu__link" href="#home">Home</a>
+          <div class="nav-menu__underline"></div>
+        </li>
+        <li class="nav-menu__item nav-menu__item--about">
+          <a class="nav-menu__link" href="#about">About me</a>
+          <div class="nav-menu__underline"></div>
+        </li>
+        <li class="nav-menu__item nav-menu__item--experience">
+          <a class="nav-menu__link" href="#experience">Experience</a>
+          <div class="nav-menu__underline"></div>
+        </li>
+        <li class="nav-menu__item nav-menu__item--contact">
+          <a class="nav-menu__link" href="#contact">Contact</a>
+          <div class="nav-menu__underline"></div>
+        </li>
+      </ul>
+      <button id="hamburger" class="hamburger hamburger--collapse" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+    </nav>
+    <header class="header u-flex-center">
+      <div class="header-content">
+        <div class="header__profile-pic">
+          <img class="header__profile-pic" src="assets/images/profile.jpg" alt="Profile picture">
+        </div>
+        <h1 class="header__text">
+          <span class="header__text--name">
+            <span class="header__text--capital-letter">A</span>ndrea <span class="header__text--capital-letter">B</span>onizzoni
+          </span>
+          <span class="header__text--role">Front-end Developer</span>
+        </h1>
+        <div class="header__line"></div>
+        <div class="header-contacts">
+          <a class="header-contacts__icon-wrapper" href="https://www.linkedin.com/in/andreabonizzoni92" target="_blank">
+            <img class="header-contacts__icon" src="./assets/icons/linkedin-white.svg" alt="Linkedin">
+          </a>
+          <a class="header-contacts__icon-wrapper" href="https://github.com/andreken" target="_blank">
+            <img class="header-contacts__icon" src="./assets/icons/github-white.svg" alt="GitHub">
+          </a>
+          <a class="header-contacts__icon-wrapper" href="mailto:andreab-92@hotmail.it" target="_blank">
+            <img class="header-contacts__icon" src="./assets/icons/mail-white.svg" alt="Mail">
+          </a>
+        </div>
+      </div>
+    </header>
+  </section>
+
+  <!-- SECTION - About -->
+  <section id="about" class="section-container section-about">
+    <div class="section-header">
+      <h3 class="section-header__title">About me</h3>
+      <div class="section-header__line"></div>
+    </div>
+    <div class="section-content">
+      <p class="section-about__intro">
+        Web developer with 6+ years of expertise, mainly focused on the front-end. I am highly interested in continuously increasing my knowledge relative to new technologies. While staying updated on several innovations, I work on code optimization and on the creation of both functional and clearly presentable programs… as also aesthetics matter!
+      </p>
+
+      <!-- TECHNICAL SKILLS -->
+      <div class="section-about-skills">
+        <h4 class="section-content-title">Technical skills</h4>
+        <!-- Technical skills - technologies -->
+        <div class="section-about-skills-group">
+          <h6 class="section-content-subtitle">
+            <p class="section-content-subtitle__text">
+              Technologies
+            </p>
+            <p class="section-content-subtitle__line"></p>
+          </h6>
+          <div class="section-about-skills-list">
+            <div class="skills-pill">
+              <img class="skills-pill__icon" src="./assets/icons/html5.svg" alt="HTML5">
+              <p class="skills-pill__name">HTML5</p>
+            </div>
+            <div class="skills-pill">
+              <img class="skills-pill__icon" src="./assets/icons/css3.svg" alt="CSS3">
+              <p class="skills-pill__name">CSS3</p>
+            </div>
+            <div class="skills-pill">
+              <img class="skills-pill__icon" src="./assets/icons/javascript.svg" alt="Javascript">
+              <p class="skills-pill__name">Javascript</p>
+            </div>
+            <div class="skills-pill">
+              <img class="skills-pill__icon" src="./assets/icons/typescript.svg" alt="TypeScript">
+              <p class="skills-pill__name">TypeScript</p>
+            </div>
+            <div class="skills-pill">
+              <img class="skills-pill__icon" src="./assets/icons/nodejs.svg" alt="NodeJS">
+              <p class="skills-pill__name">NodeJS</p>
+            </div>
+          </div>
+        </div>
+        <!-- Technical skills - framework/libraries -->
+        <div class="section-about-skills-group">
+          <h6 class="section-content-subtitle">
+            <p class="section-content-subtitle__text">
+              Libraries
+            </p>
+            <p class="section-content-subtitle__line"></p>
+          </h6>
+          <div class="section-about-skills-list">
+            <div class="skills-pill">
+              <img class="skills-pill__icon" src="./assets/icons/react.svg" alt="React">
+              <p class="skills-pill__name">React</p>
+            </div>
+            <div class="skills-pill">
+              <img class="skills-pill__icon" src="./assets/icons/jquery.svg" alt="JQuery">
+              <p class="skills-pill__name">jQuery</p>
+            </div>
+            <div class="skills-pill">
+              <img class="skills-pill__icon" src="./assets/icons/bootstrap.svg" alt="Bootstrap">
+              <p class="skills-pill__name">Bootstrap</p>
+            </div>
+            <div class="skills-pill">
+              <img class="skills-pill__icon" src="./assets/icons/sass.svg" alt="Sass">
+              <p class="skills-pill__name">Sass</p>
+            </div>
+          </div>
+        </div>
+        <!-- Technical skills - tools/software -->
+        <div class="section-about-skills-group">
+          <h6 class="section-content-subtitle">
+            <p class="section-content-subtitle__text">
+              Tools
+            </p>
+            <p class="section-content-subtitle__line"></p>
+          </h6>
+          <div class="section-about-skills-list">
+            <div class="skills-pill">
+              <img class="skills-pill__icon" src="./assets/icons/vscode.svg" alt="Visual Studio Code">
+              <p class="skills-pill__name">VS Code</p>
+            </div>
+            <div class="skills-pill">
+              <img class="skills-pill__icon" src="./assets/icons/github.svg" alt="GitHub">
+              <p class="skills-pill__name">GitHub</p>
+            </div>
+            <div class="skills-pill">
+              <img class="skills-pill__icon" src="./assets/icons/asana.svg" alt="Asana">
+              <p class="skills-pill__name">Asana</p>
+            </div>
+            <div class="skills-pill">
+              <img class="skills-pill__icon" src="./assets/icons/skype.svg" alt="Skype">
+              <p class="skills-pill__name">Skype</p>
+            </div>
+          </div>
+        </div>
+        <!-- Technical skills - databases -->
+        <div class="section-about-skills-group">
+          <h6 class="section-content-subtitle">
+            <p class="section-content-subtitle__text">
+              Databases
+            </p>
+            <p class="section-content-subtitle__line"></p>
+          </h6>
+          <div class="section-about-skills-list">
+            <div class="skills-pill">
+              <img class="skills-pill__icon" src="./assets/icons/mysql.svg" alt="MySql">
+              <p class="skills-pill__name">MySql</p>
+            </div>
+            <div class="skills-pill">
+              <img class="skills-pill__icon" src="./assets/icons/mongodb.svg" alt="MongoDB">
+              <p class="skills-pill__name">MongoDB</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SOFT SKILLS -->
+      <div class="section-about-skills">
+        <h4 class="section-content-title">Soft skills</h4>
+        <!-- Soft skills -->
+        <div class="section-about-skills-group">
+          <div class="section-about-skills-list soft-skills">
+            <div class="skills-pill">
+              <p class="skills-pill__name">Responsive design</p>
+            </div>
+            <div class="skills-pill">
+              <p class="skills-pill__name">Cross-browser compatibility</p>
+            </div>
+            <div class="skills-pill">
+              <p class="skills-pill__name">Time managment</p>
+            </div>
+            <div class="skills-pill">
+              <p class="skills-pill__name">Work under pressure</p>
+            </div>
+            <div class="skills-pill">
+              <p class="skills-pill__name">Work on multiple projects</p>
+            </div>
+            <div class="skills-pill">
+              <p class="skills-pill__name">Team player</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION - Experience -->
+  <section id="experience" class="section-container">
+    <div class="section-header">
+      <h3 class="section-header__title">Experience</h3>
+      <div class="section-header__line"></div>
+    </div>
+    <!-- timeline -->
+    <div id="cd-timeline" class="cd-container">
+
+      <!-- timeline block - Mixerpa -->
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+        </div>
+        <div class="cd-timeline-content">
+          <img class="cd-timeline-content-icon" src="./assets/icons/briefcase.svg" alt="Briefcase">
+          <span class="timeline-content-info-date">
+            November 2019 - Present
+          </span>
+          <h2 class="timeline-content-info-title">
+            Senior Front-end Developer
+          </h2>
+          <div class="timeline-content-info">
+            <span class="timeline-content-info-company">
+              Mixer Prod.Action - Crema, Italy
+            </span>
+          </div>
+          <p class="timeline-content-description">
+            <ul>
+              <li>
+                Creation and maintenance of a PWA built using React library from scratch
+              </li>
+              <li>
+                Translation of mockups into visual elements of the application
+              </li>
+              <li>
+                Campaigns managment using Mailchimp, Google Analytics and Google Data Studio
+              </li>
+              <li>
+                Creation of multiple platforms to organize remote events, using websockets for live chat and Livestream service to broadcast the event
+              </li>
+            </ul>
+          </p>
+          <ul class="content-skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>jQuery</li>
+            <li>Bootstrap</li>
+            <li>Sass</li>
+          </ul>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+  
+      <!-- timeline block - Zucchetti -->
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+        </div>
+        <div class="cd-timeline-content">
+          <img class="cd-timeline-content-icon" src="./assets/icons/briefcase.svg" alt="Briefcase">
+          <span class="timeline-content-info-date">
+            January 2015 - October 2019
+          </span>
+          <h2 class="timeline-content-info-title">
+            Full-stack Developer
+          </h2>
+          <div class="timeline-content-info">
+            <span class="timeline-content-info-company">
+              Zucchetti - Lodi, Italy
+            </span>
+          </div>
+          <p class="timeline-content-description">
+            Development of a web software used by employees to manage business travels and expenses.
+            <ul>
+              <li>
+                Improving, maintaining and adding new features
+              </li>
+              <li>
+                Managing translations in new languages
+              </li>
+            </ul>
+          </p>
+          <ul class="content-skills">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>Java</li>
+            <li>SitePainter</li>
+          </ul>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+  
+      <!-- timeline block - University -->
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+        </div>
+        <div class="cd-timeline-content">
+          <img class="cd-timeline-content-icon" src="./assets/icons/graduation-cap.svg" alt="Graduation">
+          <span class="timeline-content-info-date">
+            October 2011 - December 2014
+          </span>
+          <h2 class="timeline-content-info-title">
+            Bachelor's degree
+          </h2>
+          <div class="timeline-content-info">
+            <span class="timeline-content-info-company">
+              University of Computer Science - Crema, Italy
+            </span>
+          </div>
+          <p class="timeline-content-description">
+            Graduation grade: 104/110
+          </p>
+          <ul class="content-skills">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C++</li>
+            <li>Java</li>
+          </ul>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+  
+      <!-- timeline block - High school -->
+      <div class="cd-timeline-block">
+        <div class="cd-timeline-img cd-picture">
+        </div>
+        <div class="cd-timeline-content">
+          <img class="cd-timeline-content-icon" src="./assets/icons/graduation-cap.svg" alt="Graduation">
+          <span class="timeline-content-info-date">
+            September 2006 - July 2011
+          </span>
+          <h2 class="timeline-content-info-title">
+            High School degree
+          </h2>
+          <div class="timeline-content-info">
+            <span class="timeline-content-info-company">
+              Science High School - Crema, Italy
+            </span>
+          </div>
+          <p class="timeline-content-description">
+            Graduation grade: 93/100
+          </p>
+          <ul class="content-skills">
+            <li>C++</li>
+            <li>Java</li>
+          </ul>
+        </div> <!-- cd-timeline-content -->
+      </div> <!-- cd-timeline-block -->
+  
+
+    </div> <!-- cd-timeline -->
+  </section>
+
+  <!-- SECTION - Contact -->
+  <section id="contact" class="section-container section-contact">
+    <div class="section-header">
+      <h3 class="section-header__title">Contact</h3>
+      <div class="section-header__line"></div>
+    </div>
+    <div class="section-content">
+      <p class="section-contact__text">
+        Want to know more? Please check my social accounts or contact me through email!
+      </p>
+      <div class="section-contact-list">
+        <div class="section-contact-item">
+          <a class="section-contact-item__icon-wrapper" href="https://www.linkedin.com/in/andreabonizzoni92" target="_blank">
+            <img class="section-contact-item__icon" src="./assets/icons/linkedin-white.svg" alt="Linkedin">
+          </a>
+          <a class="section-contact-item__link" href="https://www.linkedin.com/in/andreabonizzoni92" target="_blank">
+            linkedin.com/in/andreabonizzoni92
+          </a>
+        </div>
+        <div class="section-contact-item">
+          <a class="section-contact-item__icon-wrapper" href="https://github.com/andreken" target="_blank">
+            <img class="section-contact-item__icon" src="./assets/icons/github-white.svg" alt="GitHub">
+          </a>
+          <a class="section-contact-item__link" href="https://github.com/andreken" target="_blank">
+            github.com/andreken
+          </a>
+        </div>
+        <div class="section-contact-item">
+          <a class="section-contact-item__icon-wrapper" href="mailto:andreab-92@hotmail.it" target="_blank">
+            <img class="section-contact-item__icon" src="./assets/icons/mail-white.svg" alt="Mail">
+          </a>
+          <a class="section-contact-item__link" href="mailto:andreab-92@hotmail.it" target="_blank">
+            andreab-92@hotmail.it
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,59 @@
+.section-contact {
+  min-height: 100vh;
+
+  &__text {
+    text-align: center;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 30rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+
+  &-item {
+
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+
+    @include bp-down(xs){
+      flex-direction: column;
+    }
+
+    @include bp-down(xxs){
+      font-size: .9rem;
+    }
+
+    &__icon {
+
+      width: 100%;
+      height: auto;
+
+      &-wrapper {
+        background-color: $color-blue-dark;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        padding: .6rem;
+        margin-right: 1rem;
+
+        @include bp-down(xs){
+          margin-right: 0;
+          margin-bottom: .3rem;
+        }
+      }
+    }
+
+    &__link {
+      color: $color-blue-dark;
+    }
+  }
+}

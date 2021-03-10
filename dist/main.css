@@ -1,0 +1,114 @@
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    letter-spacing: 20px;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    letter-spacing: normal;
+    transform: translateX(0); } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    letter-spacing: 20px;
+    transform: translateX(-10rem); }
+  100% {
+    opacity: 1;
+    letter-spacing: normal;
+    transform: translateX(0); } }
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    letter-spacing: 20px;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    letter-spacing: normal;
+    transform: translateX(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    letter-spacing: 20px;
+    transform: translateX(10rem); }
+  100% {
+    opacity: 1;
+    letter-spacing: normal;
+    transform: translateX(0); } }
+
+@-webkit-keyframes scaleInCenter {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  80% {
+    transform: scale(1.1); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes scaleInCenter {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  80% {
+    transform: scale(1.1); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+/* css reset to make every browser rendering page in the same way */
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #444; }
+
+.u-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.header {
+  height: 100vh;
+  overflow: hidden; }
+  .header-content {
+    text-align: center; }
+  .header__profile-pic {
+    width: 10rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    -webkit-animation: scaleInCenter 1.5s;
+            animation: scaleInCenter 1.5s; }
+  .header__text {
+    display: flex;
+    flex-direction: column; }
+    .header__text--name {
+      font-size: 2.4rem;
+      -webkit-animation: moveInLeft 1s;
+              animation: moveInLeft 1s; }
+    .header__text--role {
+      font-size: 1.6rem;
+      -webkit-animation: moveInRight 1s;
+              animation: moveInRight 1s; }
+
+.nav {
+  position: fixed;
+  z-index: 99;
+  height: 4rem;
+  width: 100%; }
+  .nav-menu {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .nav-menu__item {
+      list-style-type: none;
+      padding: .5rem 2rem; }
+

@@ -1,0 +1,55 @@
+.section-about {
+
+  &-skills-group {
+    margin-top: 2rem;
+  }
+
+  &-skills {
+    margin-top: 4rem;
+  }
+
+  &-skills-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0 8rem;
+
+    @include bp-down(l){
+      padding: 0 2rem;
+    }
+
+    @include bp-down(s){
+      padding: 0 1rem;
+    }
+
+    & .skills-pill {
+      width: 30%;
+      padding: 1rem;
+      margin: 1.5%;
+
+      @include bp-down(m) {
+        padding: .6rem;
+      }
+
+      @include bp-down(s) {
+        width: 48%;
+        margin: 1%;
+      }
+
+      @include bp-down(xs) {
+        width: 96%;
+        margin: 2%;
+      }
+    }
+
+    &.soft-skills .skills-pill {
+      width: 48%;
+      margin: 1%;
+
+      @include bp-down(s) {
+        width: 96%;
+        margin: 2%;
+      }
+    }
+  }
+}

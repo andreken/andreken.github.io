@@ -1,0 +1,33 @@
+.skills-pill {
+  
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(#000,.2) 0px 0.0625em 0.0625em, rgba(#000,.2) 0px 0.125em 0.5em, rgba(#fff,.1) 0px 0px 0px 1px inset;
+
+  &__icon {
+    width: 3rem;
+    height: auto;
+    opacity: .8;
+    margin-right: 1.4rem;
+    flex-shrink: 0;
+
+    @include bp-down(m) {
+      width: 2.2rem;
+      margin-right: 1rem;
+    }
+
+  }
+
+  &__name {
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    @include bp-down(m) {
+      font-size: 1rem;
+    }
+
+    @include bp-down(s) {
+      font-size: 1rem;
+    }
+  }
+}
